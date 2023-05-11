@@ -45,9 +45,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_grounded) 
             _rb.AddForce(new Vector2(0, _jumpForce));
+        _grounded = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) => _grounded = true;
+    private void OnTriggerStay2D(Collider2D collision) => _grounded = true;
 
     private void OnEnable() => leftRight.Enable();
 
