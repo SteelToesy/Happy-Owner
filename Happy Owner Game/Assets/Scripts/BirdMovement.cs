@@ -15,6 +15,7 @@ public class BirdMovement : MonoBehaviour
     private float tempstartpos;
     public float _magnitude;
     private float _timer;
+    private float _multiplier;
 
     void Awake()
     {
@@ -23,8 +24,9 @@ public class BirdMovement : MonoBehaviour
         _startPosition = _transform.position.y;
         tempstartpos = _startPosition;
 
+        _multiplier = 1;
         _magnitude = 0.5f;
-        _speed = 2;
+        _speed = 6.5f;
         _timer = Time.time + 3;
     }
 
@@ -46,13 +48,11 @@ public class BirdMovement : MonoBehaviour
 
     private void VulnerabilityStage()
     {
-
-        //worst case senario
-        //_timer += 3;
-
-        //if (tempstartpos > _startPosition)
-        //    _startPosition = tempstartpos;
-        //else
-        //    _startPosition -= 2;
+        _multiplier += 0.5f;
+        _timer += 3 * _multiplier;
+        if (tempstartpos > _startPosition)
+            _startPosition = tempstartpos;
+        else
+            _startPosition -= 2;
     }
 }

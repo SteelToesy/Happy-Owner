@@ -175,14 +175,14 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 1
   m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.49869668
+  m_ScreenY: 0.73505235
   m_DeadZoneWidth: 0.55
   m_DeadZoneHeight: 0.32
-  m_SoftZoneWidth: 0.89
+  m_SoftZoneWidth: 0.84
   m_SoftZoneHeight: 0.8
-  m_BiasX: 0.4999999
-  m_BiasY: -0.30600005
+  m_BiasX: 0.5
+  m_BiasY: 0
   m_CenterOnActivate: 1
 --- !u!114 &93828512
 MonoBehaviour:
@@ -300,7 +300,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848603331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.11254748, y: 0.00078190165, z: 0.00008856377, w: 0.9936461}
   m_LocalPosition: {x: 2.07, y: -0.9543, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -404,7 +404,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137783531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.11254748, y: 0.00078190165, z: 0.00008856377, w: 0.9936461}
   m_LocalPosition: {x: 2.07, y: -0.9543, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -430,11 +430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.02
+      value: 8.95
       objectReference: {fileID: 0}
     - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.64
+      value: 5.21
       objectReference: {fileID: 0}
     - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -480,6 +480,10 @@ PrefabInstance:
     - target: {fileID: 1711573662349871888, guid: d420198dd7d4c1846a68542cade81d52, type: 3}
       propertyPath: m_Name
       value: Player Exp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711573662349871888, guid: d420198dd7d4c1846a68542cade81d52, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1711573662349871903, guid: d420198dd7d4c1846a68542cade81d52, type: 3}
       propertyPath: m_RootOrder
@@ -544,11 +548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138479365835179807, guid: 477e0ec16917c8c409cababcfe279a32, type: 3}
       propertyPath: m_LocalScale.x
-      value: 21.838821
+      value: 84.05544
       objectReference: {fileID: 0}
     - target: {fileID: 4138479365835179807, guid: 477e0ec16917c8c409cababcfe279a32, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2598
+      value: 33.3679
       objectReference: {fileID: 0}
     - target: {fileID: 4138479365835179807, guid: 477e0ec16917c8c409cababcfe279a32, type: 3}
       propertyPath: m_LocalPosition.y
