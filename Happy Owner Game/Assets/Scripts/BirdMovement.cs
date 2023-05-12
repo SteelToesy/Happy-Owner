@@ -27,7 +27,7 @@ public class BirdMovement : MonoBehaviour
         _multiplier = 1;
         _magnitude = 0.5f;
         _speed = 6.5f;
-        _timer = Time.time + 3;
+        _timer = Time.time + 6;
     }
 
     // Update is called once per frame

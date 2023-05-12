@@ -9,4 +9,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("WinScene");
     }
+
+    public void LoseCondition()
+    {
+        SceneManager.LoadScene("LoseScene");
+    }
 }
