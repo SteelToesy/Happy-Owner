@@ -10,4 +10,14 @@ public class AllButtons : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("Game");
+    }
 }
