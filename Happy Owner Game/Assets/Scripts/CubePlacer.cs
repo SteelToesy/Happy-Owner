@@ -6,6 +6,7 @@ public class CubePlacer : MonoBehaviour
 {
     [SerializeField] private List<GameObject> cubePrefabs;
     [SerializeField] private Camera playerCamera;
+    [SerializeField, Range(-100, 100)] private float yOffset;
 
     private GameObject chosenPrefab;
     private GameObject previousSpawned;
@@ -18,7 +19,7 @@ public class CubePlacer : MonoBehaviour
             frustumCorners = new Vector3[4];
             playerCamera.CalculateFrustumCorners(new Rect(0, 0, 1, 1), playerCamera.farClipPlane, Camera.MonoOrStereoscopicEye.Mono, frustumCorners);
             if (ChooseRandomPrefab()) {
-                previousSpawned = Instantiate(chosenPrefab, playerCamera.transform.TransformVector(frustumCorners[0].x, frustumCorners[0].y, 0), new Quaternion(0,0,0,0));
+                previousSpawned = Instantiate(chosenPrefab, playerCamera.transform.TransformVector(frustumCorners[0].x, frustumCorners[0].y + yOffset, 0), new Quaternion(0,0,0,0));
                 spawnedPrefabs.Add(previousSpawned);
             }
         }
