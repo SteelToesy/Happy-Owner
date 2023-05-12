@@ -393,6 +393,7 @@ MonoBehaviour:
   cubePrefabs:
   - {fileID: 3856164420934213403, guid: bf50f09258333524bbf794ab45d12747, type: 3}
   playerCamera: {fileID: 538130715}
+  yOffset: 7
   spawnedPrefabs: []
 --- !u!4 &1414740944
 Transform:
