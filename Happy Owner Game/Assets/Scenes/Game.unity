@@ -791,13 +791,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1358069602608355704, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -88114378, guid: 70b2371bd93699c46bd4740607d488a4, type: 3}
     - target: {fileID: 1358069602608355705, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_Name
       value: Bird Exp
       objectReference: {fileID: 0}
+    - target: {fileID: 1358069602608355706, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
+      propertyPath: m_Radius
+      value: 0.10528499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358069602608355706, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.013606548
+      objectReference: {fileID: 0}
     - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1358069602608355707, guid: 6fe184b7d2af55449bd2d5ca4cd30fcf, type: 3}
       propertyPath: m_LocalPosition.x
