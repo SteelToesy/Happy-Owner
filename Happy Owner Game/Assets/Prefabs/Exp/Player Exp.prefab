@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1578534981f5e024fae11cbf375a1485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundTrigger: {fileID: 1711573662349871898}
+  groundTrigger: {fileID: 0}
   leftRight:
     m_Name: Left Right
     m_Type: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 2D Vector
+    - m_Name: WASD
       m_Id: 39711c8f-c9d4-4676-80b8-6d1ca258e1fa
       m_Path: 2DVector
       m_Interactions: 
@@ -149,6 +149,71 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Left Right
       m_Flags: 8
+    - m_Name: Controller
+      m_Id: 0e407f93-03c2-4ac4-8c3c-6429341ce385
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Right
+      m_Flags: 4
+    - m_Name: up
+      m_Id: ec69092c-43bb-4ed2-9b15-6ed6468ca890
+      m_Path: <Gamepad>/buttonNorth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Right
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 33643c85-6b47-49c8-b80a-9b648fd489de
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Right
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 568a26f1-63e9-4f9e-8372-7baa78ed84f6
+      m_Path: <Gamepad>/buttonWest
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Right
+      m_Flags: 8
+    - m_Name: right
+      m_Id: b8d3f287-1eda-4eea-8b8e-95ededf94053
+      m_Path: <Gamepad>/buttonEast
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Left Right
+      m_Flags: 8
+    m_Flags: 0
+  up:
+    m_Name: Up
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bbd7852a-8c6e-4bb1-b5aa-fee0b5cdb5b3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 56980b66-ed71-4542-9b66-dfdb05accbf9
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Up
+      m_Flags: 0
+    - m_Name: 
+      m_Id: b760462a-c228-41b5-8728-1127cae73537
+      m_Path: <Gamepad>/leftTrigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Up
+      m_Flags: 0
     m_Flags: 0
 --- !u!61 &1711573662349871898
 BoxCollider2D:
@@ -189,7 +254,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: -1.0841129}
+  m_Offset: {x: -0.00000011920929, y: -0.99}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}

@@ -5,16 +5,36 @@ using UnityEngine;
 public class BirdCollision : MonoBehaviour
 {
     private CircleCollider2D circleCollider;
+    public GameObject player;
+
+    public GameManager gameManager;
     void Awake()
     {
         circleCollider = GetComponent<CircleCollider2D>();
     }
 
+    private void Update()
+    {
+        CheckLoseCondition();
+    }
+
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this.gameObject);
         if (collision.gameObject.CompareTag("Player"))
-            GameManager.WinCondition();
+        {
+            gameManager.WinCondition();
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void CheckLoseCondition()
+    {
+        float maxRange = 35;
+
+        if (Vector3.Distance(transform.position, player.transform.position) > maxRange)
+        {
+            gameManager.LoseCondition();
+        }
     }
 }
