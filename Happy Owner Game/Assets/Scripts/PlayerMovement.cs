@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public BoxCollider2D groundTrigger;
 
     public InputAction leftRight;
+    public InputAction up;
 
     public float Speed
     {
@@ -33,8 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _moveDirection = leftRight.ReadValue<Vector2>();
-        if (Input.GetKeyDown(KeyCode.Space)) 
-            Jump();
+        if (up.ReadValue<float>() > 0) Jump();
     }
 
     private void FixedUpdate() => Movement();
@@ -50,7 +50,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision) => _grounded = true;
 
-    private void OnEnable() => leftRight.Enable();
+    private void OnEnable() 
+    {
+        leftRight.Enable(); 
+        up.Enable();
+    }
 
-    private void OnDisable() => leftRight.Disable();
+    private void OnDisable() 
+    {
+        leftRight.Disable();
+        up.Disable();
+    }
 }
