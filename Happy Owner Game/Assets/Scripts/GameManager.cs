@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public static class GameManager 
+public class GameManager : MonoBehaviour
 {
-    public static void WinCondition()
+    public void WinCondition()
     {
-
+        SceneManager.LoadScene("WinScene");
     }
 }

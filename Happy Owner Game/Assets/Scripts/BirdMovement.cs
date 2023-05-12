@@ -20,7 +20,7 @@ public class BirdMovement : MonoBehaviour
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _transform = _rb.transform;
+        _transform = GetComponent<Transform>();
         _startPosition = _transform.position.y;
         tempstartpos = _startPosition;
 
@@ -42,7 +42,8 @@ public class BirdMovement : MonoBehaviour
 
     private void Movement()
     {
-        _rb.velocity = new Vector2(_speed, _rb.velocity.y);
+        _transform.position = new Vector3(_rb.transform.position.x, _rb.transform.position.y, 1000);
+        _rb.velocity = new Vector3(_speed, _rb.velocity.y, 1000);
         _transform.position = new(_transform.position.x, MathF.Sin(Time.time * _speed) * _magnitude + _startPosition);
     }
 

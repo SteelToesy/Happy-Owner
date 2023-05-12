@@ -5,6 +5,8 @@ using UnityEngine;
 public class BirdCollision : MonoBehaviour
 {
     private CircleCollider2D circleCollider;
+
+    public GameManager gameManager;
     void Awake()
     {
         circleCollider = GetComponent<CircleCollider2D>();
@@ -15,6 +17,6 @@ public class BirdCollision : MonoBehaviour
     {
         Destroy(this.gameObject);
         if (collision.gameObject.CompareTag("Player"))
-            GameManager.WinCondition();
+            gameManager.WinCondition();
     }
 }
