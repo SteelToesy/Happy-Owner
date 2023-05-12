@@ -150,6 +150,15 @@ MonoBehaviour:
       m_Action: Left Right
       m_Flags: 8
     m_Flags: 0
+  up:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!61 &1711573662349871898
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,7 +198,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: -1.0841129}
+  m_Offset: {x: -0.00000011920929, y: -0.99}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
